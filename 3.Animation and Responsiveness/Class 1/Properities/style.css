@@ -1,0 +1,63 @@
+.container{
+    border: 1px solid brown;
+    background-color:yellow;
+    height: 700px;
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    /* grid-gap: 10px; */
+
+    /* For row/ major axis */
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* for column axis  */
+    /* align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: baseline;
+    align-items: stretch; */
+    /* strech is by default */
+
+    /* for rows wise contens for r1 nad r2 */
+/* 
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+
+
+     /* place-content: center;
+
+     place-items: center; */
+
+     /* justify-content: end; */
+
+     /* justify-items: center; */
+
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+#box1{
+    /* justify-self: start;
+    justify-self: end;
+    justify-self: center;
+     */
+/* 
+     align-self: start;
+     align-self: end;
+     align-self: center; */
+}

@@ -1,0 +1,95 @@
+/* Static */
+/* p{
+    position: relative;
+} */
+
+/* Relative */
+/* div{
+   
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        border: 1px solid black;
+    
+}
+
+#box3{
+    position: relative;
+  
+} */
+
+/* fixed */
+/* .box{
+    height: 4000px;
+    width: 1000px;
+    background-color: black;
+}
+
+div{
+   
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+
+}
+
+#box1{
+position:fixed;
+
+} */
+
+/* Absolute */
+
+/* .box{
+    height: 1000px;
+    width: 100vh;
+    background-color: black;
+}
+
+
+div{
+   
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+
+}
+
+
+#box3{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    
+  
+} */
+
+/* Sticky */
+.box{
+    height: 1000px;
+    width: 100vw;
+    background-color: black;
+}
+
+
+div{
+   
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+
+}
+
+
+#box3{
+    position: sticky;
+    top: 10px;
+}
+  

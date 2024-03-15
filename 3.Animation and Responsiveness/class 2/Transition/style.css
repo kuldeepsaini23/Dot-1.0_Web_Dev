@@ -1,0 +1,36 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orange;
+    background-color: aqua;
+
+    /* transition: 3s; */
+
+    /* transition-property: background-color; */
+    /* transition-property: all; Bad Practice */
+    
+    /* transition: background-color 1s ease-in 2s; */
+
+    transition: transform 1s ease 0s;/*Shoethand property*/
+/* 
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s; */
+
+}
+
+.box:hover{
+    /* background-color:brown ; */
+    transform: rotate(45deg);
+}

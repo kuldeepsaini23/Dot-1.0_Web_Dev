@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav {
+  width: 100%;
+  height: 8%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-text1 {
+  color: #a8a9aa;
+}
+
+.nav-text2 {
+  color: rgba(67, 45, 51, 255);
+  font-size: 20px;
+}
+
+.icon {
+  color: #a8a9aa;
+  width: 1.7rem;
+}
+
+/* grid section */
+.container {
+  height: 70rem;
+  width: 80%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 75% 25%;
+
+  grid-template-areas: "main side";
+}
+
+#man {
+  grid-area: main;
+  /* border: 1px solid red; */
+}
+
+#side {
+  grid-area: side;
+  /* border: 1px solid red; */
+}
+
+/* Left Section */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 3rem;
+}
+
+a {
+  text-decoration: underline;
+  filter: brightness(100%);
+}
+
+.card-mainheading h1 {
+  font-size: 2.5em;
+}
+
+.date {
+  color: #929292;
+}
+
+.box p {
+  font-size: 1.1em;
+  color: #303030;
+}
+
+.inside-border {
+  padding-bottom: 1rem;
+  border: 3px solid #e6e4e4;
+  /* box-shadow: 0px 0px 0 1px #aaaaaa; */
+}
+
+h2 {
+  margin-top: 0.3em;
+  font-size: 2em;
+}
+
+.inside-border2 {
+  border: 3px solid #e6e4e4;
+  /* box-shadow: 0px 0px 0 1px #aaaaaa; */
+}
+
+.list {
+  margin-left: 2rem;
+}
+
+.btns {
+  margin: 2rem 0;
+}
+
+.btn1 {
+  border: 1px solid #6a97f7;
+  padding: 0.8em 1em;
+  color: #6a97f7;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.btn-link {
+  text-decoration: none;
+}
+
+.btn2 {
+  border: 1px solid #999797;
+  padding: 0.8em 1em;
+  color: #999797;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* Right Section */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 3rem;
+}
+  
+
+.about {
+  width: 100%;
+  background-color: #e7e7e7;
+  padding: 0.7em 1em;
+}
+
+.list2 {
+  list-style: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  .left-section{
+   padding: 0 1rem;
+  }
+  .right-section {
+    /* margin: 1rem 2rem; */
+    background-color: #e7e7e7;
+    width: 200%;
+    padding: 0 2rem;
+  }
+
+  .about{
+    width: 50%;
+    padding: 0;
+  }
+ 
+  .btn1{
+    margin: 1rem 0;
+    
+  }
+}

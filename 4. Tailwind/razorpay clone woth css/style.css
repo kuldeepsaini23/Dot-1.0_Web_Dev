@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrappper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav {
+  background-color: rgba(2, 4, 42, 255);
+}
+
+.container {
+  width: 1090px;
+  margin: auto;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.razor-link {
+  cursor: pointer;
+  padding: 7em 0;
+}
+
+.razorpay-logo {
+  width: 125px;
+  height: 30px;
+}
+
+.listing {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+.list-item {
+  position: relative;
+  color: white;
+  padding: 1em 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  color: #3894fc;
+  transition: all 200ms;
+}
+
+.list-line {
+  display: none;
+  background-color: #3894fc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.2em;
+  transition: all 200ms;
+ 
+}
+
+.list-item:hover .list-line {
+  cursor: pointer;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .list-item a:focus{
+    color: #3894fc;
+}
+
+.list-line a:focus {
+    background-color: #3894fc;
+    position: absolute;
+    bottom: 0;
+    width: 1rem;
+   height: 1rem;
+} */
+
+.right-side {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-first {
+  padding: 1em 2em;
+  background-color: rgba(2, 4, 42, 255);
+  color: white;
+  border: 1px solid #3894fc;
+  border-radius: 0.1px;
+}
+
+.btn-first:hover {
+  cursor: pointer;
+}
+
+.btn-second {
+    display: flex;
+    justify-content: center;
+gap: 0.5em;
+  padding: 0.9em 1.2em;
+  color: #3894fc;
+  border: 1px solid #3894fc;
+  border-radius: 0.1px;
+  font-weight: 700;
+}
+
+.btn-second:hover {
+  cursor: pointer;
+  color: #0071f3;
+}
+
+.arrow-right{
+    cursor: pointer;
+    color: #3894fc;
+    height: 1em;
+    width:1em;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuldeep Saini</title>
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- <div class="circle1"></div>
+    <div class="circle2"></div> -->
+
+    <div class="conatiner">
+      <div class="card-wrapper">
+        <div>
+          <img src="./assets/profile-image.png" alt="user" />
+        </div>
+        <div class="user-name">
+          <h2>Kuldeep Saini</h2>
+        </div>
+        <div class="designation">
+          <h3>Trying To Be a Software Developer</h3>
+        </div>
+        <div class="bottom-group">
+          <button onclick="openFollowModal()" class="btn-follow btn-card">
+            <i class="fa-solid fa-user-plus"></i>
+            <div>Follow me</div>
+          </button>
+
+          <button onclick="openModal()" class="btn-shar btn-card">
+            <i class="fa-solid fa-share"></i>
+            <div>share my profile</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Component -->
+
+    <div class="modal-follow">
+      <div class="modal-header">
+        <h1>Follow My Profiles</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Follow Via</h3>
+
+        <div class="icon-container">
+          <a href="https://twitter.com/kuldeepsaini_23" class="icon twitter" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://github.com/kuldeepsaini23" class="icon github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kuldeep-saini-31ab95220/" class="icon linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://www.instagram.com/kuldeepsaini_23/" class="icon instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/KuldeepSaini2311/" class="icon facebook" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Share this via</h3>
+
+        <div class="icon-container">
+          <a href="#" onclick="copyLinkToClipboard(); alert(); return false;" class="icon copy">
+            <i class="fa-solid fa-copy"></i>
+          </a>
+
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://kuldeepsaini23.github.io/ProfileModal/"
+            class="icon facebook" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://twitter.com/intent/tweet?url=https://kuldeepsaini23.github.io/ProfileModal/"
+            class="icon twitter" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/direct/new/?url=https://kuldeepsaini23.github.io/ProfileModal/"
+            class="icon instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://wa.me/?text=https://kuldeepsaini23.github.io/ProfileModal/"
+            class="icon whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="https://t.me/share/url?url=https://kuldeepsaini23.github.io/ProfileModal/"
+            class="icon telegram" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.translated{
+    transform: perspective(100px) translateZ(-10px);
+}
+
+.scaled{
+    margin-left: 200px; 
+    
+   transform: perspective(350px) scaleZ(7) rotateX(0deg) rotateY(60deg); 
+}
+
+.rotate{
+    
+    transform: rotateZ(30deg);  
+    /* rotate Doesnot require amy perspective */
+}
+
+

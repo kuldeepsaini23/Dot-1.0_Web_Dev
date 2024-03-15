@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <link rel="shortcut icon" href="assests/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="container-navbar">
+      <div class="navbar">
+        <div class="logo-container">
+          <img src="assests/userAsset/klogo.png" alt="" class="logo" />
+
+          <div class="logo-text">uldeep Saini</div>
+        </div>
+
+        <div class="three-lines">
+          <button class="arrows-btn" id="arrow-button" onclick="myFunction()">
+            <div class="arrows" id="myDIV1"></div>
+            <div class="arrows" id="myDIV2"></div>
+            <div class="arrows" id="myDIV3"></div>
+          </button>
+        </div>
+
+        <div class="nav-items" id="myDIV">
+          <div><a href="#projects">Projects</a></div>
+          <div><a href="#skills">Skills</a></div>
+          <div><a href="#contactme">Contact Me</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container">
+      <!-- Hero section -->
+      <div class="hero-section">
+        <div class="faded-text">Kuldeep Saini</div>
+
+        <div class="hero-section-left" id="hsl">
+          <div class="hero-section-heading overall-mainheading">
+            Hi!! Kuldeep Saini
+          </div>
+          <div class="hero-section-heading hero-section-subheading for-flex">
+            I am a
+            <div class="hero-section-heading hero-section-subheading">
+              <span class="role" id="special"></span>
+            </div>
+            <!-- ignore this span for now -->
+          </div>
+
+          <div class="hero-section-description">
+            I’m a software developer and here is my portfolio website. Here
+            you’ll learn about myelf and my journey.
+          </div>
+
+          <button id="btn" class="btn-pink">Hire Me</button>
+          <div id="contact-form-container" style="display: none">
+            <form>
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Name" required />
+              </div>
+              <div class="form-group">
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <select id="department" name="department">
+                  <option value="sales">Sales</option>
+                  <option value="support">Support</option>
+                  <option value="marketing">Marketing</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="hero-section-right" id="hsr">
+          <div class="absolute icons icon-dots">
+            <img src="assests/userAsset/dots.png" alt="" />
+          </div>
+          <div class="absolute icons icon-cube">
+            <img src="assests/userAsset/cube.png" alt="" />
+          </div>
+          <div class="absolute icons icon-circle">
+            <img src="assests/userAsset/circle.png" alt="" />
+          </div>
+          <div class="absolute icons icon-zigzag">
+            <img src="assests/userAsset/zigzags.png" alt="" />
+          </div>
+          <div class="absolute icons icon-plus">
+            <img src="assests/userAsset/plus.png" alt="" />
+          </div>
+          <div class="user-image">
+            <img src="assests/userAsset/mypic.jpg" alt="" class="mypic" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+
+    <div class="project-section" id="projects">
+      <h2 class="page-header">Projects</h2>
+
+      <div class="project-container">
+        <div class="project-card" id="project1">
+          <div class="project-number project-number-right">01</div>
+
+          <div class="project-content project-content-left">
+            <div class="project-skills-container">
+              <img class="project-skill" src="assests/stack/CSS.png" alt="" />
+              <img class="project-skill" src="assests/stack/HTML.png" alt="" />
+              <img class="project-skill" src="assests/stack/Javascript.svg" alt="" />
+              <img class="project-skill" src="assests/stack/Express.png" alt="" />
+              <!-- <img class="project-skill" src="assests/stack/NextJsCircle.png" alt="" /> -->
+              <!-- <img class="project-skill" src="assests/stack/Tailwind.png" alt="" /> -->
+              <img class="project-skill" src="assests/stack/NodeJs.svg" alt="" />
+              <!-- <img class="project-skill" src="assests/stack/MongoDB.svg" alt="" /> -->
+              <!-- <img class="project-skill" src="assests/stack/Redux.svg" alt="" /> -->
+              <!-- <img class="project-skill" src="assests/stack/Vercel.svg" alt="" /> -->
+            </div>
+
+            <h2 class="project-heading">Delhi Metro Route</h2>
+
+            <div class="project-subheading">
+              The Metro project allows users to plan their route from one
+              destination to another with ease. The process of showing a route
+              from one path to another is made simple through the use of
+              state-of-the-art mapping technologies and algorithms..
+            </div>
+
+            <div class="btn-grp">
+              <button class="btn-pink btn-project" onclick="window.open('https://dmrc.onrender.com/about', '_blank')">
+                Read More
+              </button>
+
+              <!-- <a href="">
+                <i title="GithubLink" class="fa-brands fa-github icon"></i>
+              </a> -->
+
+              <a href="https://dmrc.onrender.com" target="_blank">
+                <i title="Live Link" class="fa-solid fa-link icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project2">
+          <div class="project-number project-number-left">02</div>
+
+          <video autoplay loop src="./assests/Video/Neon - 62064_2.mp4" class="project-card video"></video>
+
+          <div class="project-content project-content-right">
+            <div class="project-skills-container">
+              <img class="project-skill pr" src="assests/stack/premierpro.png" alt="" />
+              <img class="project-skill ae" src="assests/stack/pngegg.png" alt="" />
+              <!-- <img class="project-skill" src="assests/stack/Javascript.svg" alt="" />
+              <img class="project-skill" src="assests/stack/NextJsCircle.png" alt="" />
+              <img class="project-skill" src="assests/stack/Tailwind.png" alt="" />
+              <img class="project-skill" src="assests/stack/Redux.svg" alt="" />
+              <img class="project-skill" src="assests/stack/Vercel.svg" alt="" /> -->
+            </div>
+
+            <h2 class="project-heading">Valorant Edits</h2>
+            <p class="project-subheading">
+              In my free time, I try to edit some of my Valorant clips. May be
+              you guys will like it and I tried my best to edit these clips.
+            </p>
+            <div class="btn-grp">
+              <button class="btn-pink btn-project"
+                onclick="window.open('https://www.instagram.com/ultraflickyt/','_blank')">
+                Read More
+              </button>
+              <!-- <a href="">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a> -->
+              <a href="https://www.instagram.com/p/CPQAFZjDYZO/" target="_blank">
+                <i title="Live Link" class="fa-solid fa-link icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project3">
+          <div class="project-number project-number-right">03</div>
+          <div class="project-content project-content-left">
+            <div class="project-skill-container">
+              <img class="project-skill" src="assests/stack/HTML.png" alt="" />
+              <img class="project-skill" src="assests/stack/CSS.png" alt="" />
+              <img class="project-skill" src="assests/stack/Javascript.svg" alt="" />
+              <img class="project-skill" src="assests/stack/Api.svg" alt="" />
+            </div>
+
+            <h2 class="project-heading">Weather</h2>
+            <p class="project-subheading">
+              It is the website which tells you about weather by using API and
+              entering correct city name. Read more contain link of the api
+              used by me.
+            </p>
+            <div class="btn-grp">
+              <button class="btn-pink btn-project">
+                <a href="https://openweathermap.org/api" target="_blank">
+                  Read More</a>
+              </button>
+              <a target="_blank" href="https://github.com/kuldeepsaini23/Weather-website-using-API.git">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a>
+              <a target="_blank" href="https://kuldeepsaini23.github.io/Weather-website-using-API/">
+                <i title="Live Link" class="fa-solid fa-link icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card" id="project4">
+          <div class="project-number project-number-left">04</div>
+          <div class="project-content project-content-right">
+            <div class="project-skill-container">
+              <img class="project-skill" src="assests/stack/HTML.png" alt="" />
+              <img class="project-skill" src="assests/stack/CSS.png" alt="" />
+              <img class="project-skill" src="assests/stack/Javascript.svg" alt="" />
+              <img class="project-skill" src="assests/stack/NextJsCircle.png" alt="" />
+              <img class="project-skill" src="assests/stack/Tailwind.png" alt="" />
+              <img class="project-skill" src="assests/stack/Vercel.svg" alt="" />
+            </div>
+            <h2 class="project-heading">Preview Images</h2>
+            <p class="project-sub-heading">
+              These are the some images made by me for the my friend project
+            </p>
+            <div class="btn-grp">
+               <button class="btn-pink btn-project">Read More</button>
+              <a href="">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a> 
+              <a
+                href="https://docs.google.com/presentation/d/e/2PACX-1vSL-znSLID_ubgniafpgeO0XgmyPYmenKX6ttivzlZyGlklyxvWyMPAhJj7TtU2-Yol3qEeKT7FdxlF/pub?start=false&loop=true&delayms=3000">
+                <i title="Live Link" class="fa-solid fa-link icon"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- skills section -->
+    <div class="container skills-container" id="skills">
+      <div class="skills-fade-text">Skills</div>
+
+      <div class="skills-container-left">
+        <h2 class="skills-heading">
+          <sapn class="caps">M</sapn>e and
+          <br />
+          MyTech Stack
+        </h2>
+
+        <div class="skills-subheading">
+          <p>
+            I am Kuldeep Saini, who is currently pursuing his BSC in Computer
+            Science from Ramanujan College. I am in final year of studies, and
+            my passion for technology has led me to become a skilled front-end
+            developer. I have a strong understanding of HTML, CSS, SASS,
+            Javascript, and Tailwind. I am a big fan of video games and
+            mentions that his favorite game is "VALORANT". I am also
+            passionate about live streaming on YouTube and loves to share his
+            experiences and knowledge with others.
+          </p>
+
+          <p>
+            In addition to these technical skills, My love for programming is
+            evident in the dedication and hard work I puts into his projects.
+            I always looking for new challenges to help him grow and enhance
+            his skills, and his positive attitude and eagerness to learn new
+            things make him an asset to any team.
+          </p>
+
+          <p>
+            my expertise in Java and in Frontend-Web tech stack is worth
+            mentioning and also I am currently leaning backend tech stackand
+            Dsa in C++ He has a solid understanding of these programming
+            languages and is able to create complex applications with ease. He
+            is a quick learner and is always eager to explore new technologies
+            and programming concepts.
+            <!-- Overall,I am a driven and hardworking individual who is dedicated
+              to achieving his goals. My passion for technology and my
+              expertise in front-end development make me a valuable asset to
+              any organization, and his positive attitude and willingness to
+              learn make him a pleasure to work with. -->
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-container-right">
+        <div class="uppercircle">
+          <div class="upper-elements" id="html">
+            <img src="./assests/stack/HTML.png" alt="" class="skills-logo">
+          </div>
+
+          <div class="upper-elements" id="css">
+            <img src="./assests/stack/CSS.png" alt="" class="skills-logo">
+          </div>
+          <div class="upper-elements" id="Javascript">
+            <img src="./assests/stack/Javascript.svg" alt="" class="skills-logo">
+          </div>
+          <div class="upper-elements" id="Tailwind">
+            <img src="./assests/stack/Express.png" alt="" class="skills-logo">
+          </div>
+          <div class="upper-elements" id="Git">
+            <img src="./assests/stack/Git.svg" alt="" class="skills-logo">
+          </div>
+          <div class="upper-elements" id="Github">
+            <img src="./assests/stack/Github.svg" alt="" class="skills-logo">
+          </div>
+
+
+          <div class="inner-circle-wrapper">
+            <div class="inner-circle">
+
+              <div class="inner-elements" id="kotlin">
+                <img src="./assests/stack/kotlin.png" alt="" class="skills-logoinner" height="7.5rem">
+              </div>
+
+              <div class="inner-elements" id="afterEffects">
+                <img src="./assests/stack/C++.png" alt="" class="skills-logoinner">
+              </div>
+
+              <div class="inner-elements" id="java">
+                <img src="./assests/stack/java.png" alt="" height="80px" class="skills-logoinner">
+              </div>
+              <div class="inner-elements" id="python">
+                <img src="./assests/stack/python.png" alt="" class="skills-logoinner">
+              </div>
+              <!-- <div class="upper-elements">
+                    <img src="./assests/stack/Github.svg" alt="" class="skills-logo">
+                  </div> -->
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Extra  -->
+        <!--<img src="assests/userAsset/blob vector.png" alt="" class="blob-style" />
+        <img src="assests/stack/Tailwind.png" alt="" class="skills-logo" />
+        <img src="assests/stack/java.png" alt="" class="skills-logo js" />
+        <img src="assests/stack/C++.png" alt="" class="skills-logo" />
+        <img src="assests/stack/kotlin.png" alt="" class="skills-logo" />
+        <img src="assests/stack/photoshop.png" alt="" class="skills-logo" />
+         <img src="assests/stack/Bash.svg" alt="" class="skills-logo" /> 
+        <img src="assests/stack/after effects.png" alt="" class="skills-logo aee" />
+         <img src="assests/stack/ChartJs.svg" alt="" class="skills-logo" /> 
+        <img src="assests/stack/CSS.png" alt="" class="skills-logo" />
+         <img src="assests/stack/Docker.svg" alt="" class="skills-logo" /> 
+        <img src="assests/stack/Express.png" alt="" class="skills-logo" />
+        <img src="assests/stack/Git.svg" alt="" class="skills-logo" />
+        <img src="assests/stack/Github.svg" alt="" class="skills-logo" />
+         <img src="assests/stack/Graphql.svg" alt="" class="skills-logo" /> 
+        <img src="assests/stack/HTML.png" alt="" class="skills-logo" />
+        <img src="assests/stack/Javascript.svg" alt="" class="skills-logo" />
+        <img src="assests/stack/K8s.svg" alt="" class="skills-logo" /> 
+         <img src="assests/stack/MaterialUI.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/MongoDB.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/Next.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/React.png" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/NextJsCircle.png" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/NodeJs.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/Redux.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/Vercel.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="assests/stack/Saas.svg" alt="" class="skills-logo">
+        <img src="assests/stack/python.png" alt="" class="skills-logo" />
+        <img src="assests/stack/premierpro.png" alt="" class="skills-logo" />
+        <img src="assests/stack/sass.png" alt="" class="skills-logo" />-->
+
+      </div>
+    </div>
+
+    <!-- Contact Me -->
+        <div class="contact-form-container" id="contactme">
+          <div class="container" id="cd">
+            <h1 class="contactus-heading">Contact Me</h1>
+
+            <h3 class="contactus-subheading">
+              Questions, thoughts, or just want to say hello?
+            </h3>
+
+            <div class="contactus-form-container">
+              <form class="form" id="contact-form">
+                <div class="formfield-container">
+                  <input class="formfield" type="text" id="username" name="name" placeholder="Enter your name"
+                    required />
+                  <input class="formfield" type="email" id="mail" name="email" placeholder="Enter your email"
+                    required />
+                  <input class="formfield" type="text" id="subject" name="subject" placeholder="Enter your subject"
+                    required />
+                  <textarea id="msg" name="message" cols="30" rows="10" class="formfield formfield-textarea"
+                    placeholder="Enter your message" required minlength="5"></textarea>
+                </div>
+                <div>
+                  <button class="btn-pink" id="submit-btn">
+                    Send Message
+                    <i class="submit-icon fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="footer-faded-text">Kuldeep Saini</div>
+
+              <div class="link-wrapper">
+                <div>
+                  <a href="#projects">Projects</a>
+                </div>
+
+                <div>
+                  <a href="#skills">Skills</a>
+                </div>
+
+                <div>
+                  <a href="#contactme">Contact Me</a>
+                </div>
+              </div>
+
+              <div class="icon-wrapper">
+                <a href="https://www.linkedin.com/in/kuldeep-saini-31ab95220/" class="footer-icon-link" target="_blank">
+                  <i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="https://github.com/kuldeepsaini23" class="footer-icon-link" target="_blank"><i
+                    class="fa-brands fa-github icon"></i></a>
+                <a href="https://twitter.com/kuldeepsaini_23" class="footer-icon-link" target="_blank"><i
+                    class="fa-brands fa-twitter icon"></i></a>
+                <a href="https://www.instagram.com/kuldeepsaini_23/" class="footer-icon-link" target="_blank"><i
+                    class="fa-brands fa-instagram icon"></i></a>
+                <a href="https://www.youtube.com/@UltraFlick" class="footer-icon-link" target="_blank"><i
+                    class="fa-brands fa-youtube icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- we will add script -->
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+      <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Video Editor",
+            "Web Developer",
+            "Gamer",
+            "Frontend Developer",
+            "Coder",
+            "App Developer",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
+
+      <!-- <script src="form.js"></script> -->
+      <script src="index.js"></script>
+
+      <script src="DarkMode.js"></script>
+</body>
+
+</html>

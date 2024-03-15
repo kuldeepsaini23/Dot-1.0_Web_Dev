@@ -1,0 +1,70 @@
+
+
+/* using Relative */
+/* 
+#box2{
+    position: relative;
+    bottom: 19px;
+    left: 360px;
+}
+
+#box3{
+    position: relative;
+    top: 344px;
+}
+
+#box4{
+    position: relative;
+    top: 326px;
+    left:360px;
+}
+
+
+#box5{
+    position: relative;
+    top: 116px;
+    left: 189px;
+} */
+
+
+/* Using Absolute */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    margin: 10px;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#box2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#box3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+#box4{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+#box5{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}

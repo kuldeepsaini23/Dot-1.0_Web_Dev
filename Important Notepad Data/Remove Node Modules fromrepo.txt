@@ -1,0 +1,16 @@
+Open your project in VS Code.
+In the root directory of your project, locate or create the .gitignore file.
+Open the .gitignore file in the editor.
+Add the following line to the file if it's not already present:
+
+node_modules/
+This line tells Git to ignore the node_modules directory.
+Save the file.
+Once you've saved the .gitignore file with the node_modules/ entry, Git will ignore the node_modules directory and it will not appear in the source control changes in VS Code.
+
+Please note that if the node_modules directory is already being tracked by Git, you need to remove it from the Git repository by running the following command in your project's root directory:
+
+shell/Terminal
+
+git rm -r --cached node_modules
+After running this command, the node_modules directory will be removed from the Git repository, but it will still exist locally on your machine. It will then be ignored by the .gitignore file. Be cautious when removing files from the repository, and make sure you have a backup or can easily restore them if needed.
